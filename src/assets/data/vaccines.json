@@ -1,0 +1,168 @@
+[
+  {
+    "id": 0,
+    "name": "HepB",
+    "backgroundColor":"#FF6F52",
+    "recommendedAdministrations": [
+      {
+        "name": "1st dose",
+        "period": [0]
+      },{
+        "name": "2nd dose",
+        "period": [1, 2]
+      },{
+        "name": "3rd dose",
+        "period": [4,5,6,7]  
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Rotavirus*",
+    "backgroundColor":"#F6CD79",
+    "recommendedAdministrations": [
+      {
+        "name": "1st dose",
+        "period": [2]
+      },{
+        "name": "2nd dose",
+        "period": [3]
+      },{
+        "name": "3rd dose",
+        "period": [4]  
+      }]
+  },
+  {
+    "id": 2,
+    "name": "DTap",
+    "color":"white",
+    "backgroundColor":"#C5476A",
+    "recommendedAdministrations": [
+      {
+        "name": "1st dose",
+        "period": [2]
+      },{
+        "name": "2nd dose",
+        "period": [3]
+      },{
+        "name": "3rd dose",
+        "period": [4]  
+      },{
+        "name": "4th dose",
+        "period": [6,7]  
+      },{
+        "name": "5th dose",
+        "period": [10]  
+      }]
+  },
+  {
+    "id": 3,
+    "name": "Hib",
+    "backgroundColor":"#BADD53",
+    "recommendedAdministrations": [
+      {
+        "name": "1st dose",
+        "period": [2]
+      },{
+        "name": "2nd dose",
+        "period": [3]
+      },{
+        "name": "3rd dose",
+        "period": [4]  
+      },{
+        "name": "3rd or 4th dose",
+        "period": [5,6]  
+      }]
+  },
+  {
+    "id": 4,
+    "name": "Pneumococcal",
+    "backgroundColor":"#3DC1D2",
+    "recommendedAdministrations": [
+      {
+        "name": "1st dose",
+        "period": [2]
+      },{
+        "name": "2nd dose",
+        "period": [3]
+      },{
+        "name": "3rd dose",
+        "period": [4]  
+      },{
+        "name": "4th dose",
+        "period": [5,6]  
+    }]
+  },
+  {
+    "id": 5,
+    "name": "Polio",
+    "color":"white",
+    "backgroundColor":"#536DE5",
+    "recommendedAdministrations": [
+      {
+        "name": "1st dose",
+        "period": [2]
+      },{
+        "name": "2nd dose",
+        "period": [3]
+      },{
+        "name": "3rd dose",
+        "period": [4,5,6,7]  
+      },{
+        "name": "4th dose",
+        "period": [10]  
+    }]
+  },
+  {
+    "id": 6,
+    "name": "Influenza (flu)**",
+    "color":"white",
+    "backgroundColor":"#5A6175",
+    "recommendedAdministrations":[ 
+      {
+        "name": "Yearly 1 or 2 doses",
+        "period": [4,5,6,7,8,9,10]
+        }]
+      },
+      {
+        "id": 7,
+        "name": "MMR",
+        "color":"white",
+        "backgroundColor":"#31A756",
+    "recommendedAdministrations": [ 
+      {
+        "name": "1st dose",
+        "period": [5,6]
+      },{
+        "name": "2nd dose",
+        "period": [10]
+      }]
+  },
+  {
+    "id": 8,
+    "name": "Varicella (Chickenpox)",
+    "color":"white",
+    "backgroundColor":"#574C8E",
+    "recommendedAdministrations": [
+      {
+        "name": "1st dose",
+        "period": [5,6]
+      },{
+        "name": "2nd dose",
+        "period": [10]
+      }]
+  },
+  {
+    "id": 9,
+    "name": "HepA***",
+    "backgroundColor":"#F78FB4",
+    "recommendedAdministrations": [
+      {
+        "name": "1st dose",
+        "period": [5,6]
+      },{
+        "name": "2nd dose",
+        "period": [7,8]
+      }]
+  }
+]

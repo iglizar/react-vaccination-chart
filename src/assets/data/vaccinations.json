@@ -1,0 +1,42 @@
+[
+  {
+    "vaccine_id": 0,
+    "dose_id": 1,
+    "date":"2021-8-1"
+  },
+  {
+    "vaccine_id": 0,
+    "dose_id": 0,
+    "date":"2021-8-1"
+  },
+  {
+    "vaccine_id": 1,
+    "dose_id": 2,
+    "date":"2021-8-7"
+  },
+  {
+    "vaccine_id": 1,
+    "dose_id": 3,
+    "date":"2021-9-1"
+  },
+  {
+    "vaccine_id": 1,
+    "dose_id": 3,
+    "date":"2021-9-1"
+  },
+  {
+    "vaccine_id": 2,
+    "dose_id": 2,
+    "date":"2021-9-1"
+  },
+  {
+    "vaccine_id": 3,
+    "dose_id": 2,
+    "date":"2021-9-1"
+  },
+  {
+    "vaccine_id": 5,
+    "dose_id": 2,
+    "date":"2021-9-1"
+  }
+]
