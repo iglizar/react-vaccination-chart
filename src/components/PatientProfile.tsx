@@ -19,7 +19,7 @@ export const PatientProfile = () => {
 				<h4>His vaccinations:</h4>
 				<ul>
 					{VACCINATIONS.map((vaccination: IVaccinationEvent) => (
-						<li style={{fontSize:  "9px"}}>
+						<li style={{fontSize:  "9px", lineHeight:"14px"}}>
 							{vaccination.date} - {VACCINES[vaccination.vaccine_id].name} - Dose
 							number {vaccination.dose_id}
 						</li>
