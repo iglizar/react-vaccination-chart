@@ -8,7 +8,7 @@ export const PatientProfile = () => {
 	const patient = PATIENT_DATA as IPatient;
 
 	return (
-		<Card>
+		<Card style={{display: "flex", flexDirection:"row", width:"620px"}}>
 			<Card.Content>
 				<Card.Header>{patient.name}</Card.Header>
 				<Card.Meta>
@@ -16,10 +16,10 @@ export const PatientProfile = () => {
 				</Card.Meta>
 			</Card.Content>
 			<Card.Content>
-				<h4>His vaccinations:</h4>
+				<h4>His applied vaccines:</h4>
 				<ul>
 					{VACCINATIONS.map((vaccination: IVaccinationEvent) => (
-						<li style={{ fontSize: "9px", lineHeight: "14px", textAlign: "left" }}>
+						<li style={{ fontSize: "12px", lineHeight: "15px", textAlign: "left" }}>
 							{vaccination.date} - {VACCINES[vaccination.vaccine_id].name} - Dose
 							number {vaccination.dose_id}
 						</li>
