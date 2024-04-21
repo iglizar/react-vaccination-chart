@@ -18,7 +18,7 @@
   },
   {
     "id": 1,
-    "name": "Rotavirus*",
+    "name": "Rotavirus",
     "backgroundColor":"#F6CD79",
     "recommendedAdministrations": [
       {
@@ -115,7 +115,7 @@
   },
   {
     "id": 6,
-    "name": "Influenza (flu)**",
+    "name": "Influenza (flu)",
     "color":"white",
     "backgroundColor":"#5A6175",
     "recommendedAdministrations":[ 
@@ -154,7 +154,7 @@
   },
   {
     "id": 9,
-    "name": "HepA***",
+    "name": "HepA",
     "backgroundColor":"#F78FB4",
     "recommendedAdministrations": [
       {
