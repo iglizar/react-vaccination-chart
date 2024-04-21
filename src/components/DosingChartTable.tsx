@@ -36,7 +36,7 @@ const didApplyVaccine = (
 	);
 
 export const DosingChartTable = (props: DosingChartProps) => {
-  const [showOnlyApplied, setShowOnlyApplied] = useState<boolean>(false);
+  const [showOnlyApplied, setShowOnlyApplied] = useState<boolean>(true);
 	
   return (
     <>
