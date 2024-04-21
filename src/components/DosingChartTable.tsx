@@ -8,35 +8,36 @@ interface DosingChartProps {
   vaccines: IVaccine[];
 }
 
+const getPeriod = (vaccine: IVaccine, dateIndex: number) => {
+	return vaccine.recommendedAdministrations.find(
+		(administration) => administration.period.indexOf(dateIndex) > -1
+	);
+};
+const isFirstPeriod = (vaccine: IVaccine, dateIndex: number) => {
+	return (
+		vaccine.recommendedAdministrations.find(
+			(administration) => administration.period.indexOf(dateIndex) > -1
+		)?.period[0] === dateIndex
+	);
+};
+const isLastPeriod = (vaccine: IVaccine, dateIndex: number) => {
+	const vaccineAux = vaccine.recommendedAdministrations.find(
+		(administration) => administration.period.indexOf(dateIndex) > -1
+	);
+	return vaccineAux?.period[vaccineAux?.period.length - 1] === dateIndex;
+};
+const didApplyVaccine = (
+	vaccine_id: IVaccinationEvent["vaccine_id"],
+	dose_id: IVaccinationEvent["dose_id"]
+) =>
+	vaccinations.find(
+		(vaccination: IVaccinationEvent) =>
+			vaccination.vaccine_id === vaccine_id && vaccination.dose_id === dose_id
+	);
+
 export const DosingChartTable = (props: DosingChartProps) => {
   const [showOnlyApplied, setShowOnlyApplied] = useState<boolean>(false);
-
-  const getPeriod = (vaccine: IVaccine, dateIndex: number) => {
-    return vaccine.recommendedAdministrations.find(
-      (administration) => administration.period.indexOf(dateIndex) > -1
-    );
-  };
-  const isFirstPeriod = (vaccine: IVaccine, dateIndex: number) => {
-    return (
-      vaccine.recommendedAdministrations.find(
-        (administration) => administration.period.indexOf(dateIndex) > -1
-      )?.period[0] === dateIndex
-    );
-  };
-  const isLastPeriod = (vaccine: IVaccine, dateIndex: number) => {
-    const vaccineAux = vaccine.recommendedAdministrations.find(
-      (administration) => administration.period.indexOf(dateIndex) > -1
-    );
-    return vaccineAux?.period[vaccineAux?.period.length - 1] === dateIndex;
-  };
-  const didApplyVaccine = (
-    vaccine_id: IVaccinationEvent["vaccine_id"],
-    dose_id: IVaccinationEvent["dose_id"]
-  ) =>
-    vaccinations.find(
-      (vaccination: IVaccinationEvent) =>
-        vaccination.vaccine_id === vaccine_id && vaccination.dose_id === dose_id
-    );
+	
   return (
     <>
       <Table fixed celled compact>

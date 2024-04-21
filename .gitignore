@@ -1,1 +1,19 @@
-node_modules
+# System files
+.DS_Store
+Thumbs.db
+
+# Node.js files
+node_modules/
+npm-debug.log
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build output
+/build
+
+# Environment variables
+.env
