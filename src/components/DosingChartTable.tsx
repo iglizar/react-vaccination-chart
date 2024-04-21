@@ -56,6 +56,7 @@ export const DosingChartTable = (props: DosingChartProps) => {
 					Immunization Dosing Chart for Infants to Preschool-Aged Children
 				</div>
 				<Checkbox
+					checked={showOnlyApplied}
 					onChange={() => {
 						setShowOnlyApplied(!showOnlyApplied);
 					}}
@@ -83,6 +84,7 @@ export const DosingChartTable = (props: DosingChartProps) => {
 								style={{
 									backgroundColor: "#181B38",
 									color: "white",
+									paddingTop: "6px",
 									paddingBottom: "5px"
 								}}
 								verticalAlign="bottom"

@@ -13,9 +13,9 @@ const DosingChart = () => {
 				padding: "20px 20px 40px 20px"
 			}}
 		>
-			<DosingChartTable vaccines={VACCINES} />
 			
 			<PatientProfile />
+			<DosingChartTable vaccines={VACCINES} />
 		</div>
 	);
 };
