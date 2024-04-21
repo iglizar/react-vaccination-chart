@@ -16,13 +16,15 @@ export const PatientProfile = () => {
 				</Card.Meta>
 			</Card.Content>
 			<Card.Content>
-				<h4>Vaccinations:</h4>
-				{VACCINATIONS.map((vaccination: IVaccinationEvent) => (
-					<>
-						{vaccination.date} - {VACCINES[vaccination.vaccine_id].name} - Dose
-						number {vaccination.dose_id}
-					</>
-				))}
+				<h4>His vaccinations:</h4>
+				<ul>
+					{VACCINATIONS.map((vaccination: IVaccinationEvent) => (
+						<li style={{fontSize:  "9px"}}>
+							{vaccination.date} - {VACCINES[vaccination.vaccine_id].name} - Dose
+							number {vaccination.dose_id}
+						</li>
+					))}
+				</ul>
 			</Card.Content>
 		</Card>
 	);
