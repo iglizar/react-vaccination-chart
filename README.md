@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# Vaccination Calendar Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project contains a React component for displaying a dynamic vaccination calendar. The calendar displays information about vaccine types, recommended vaccination ranges, and vaccines already applied. The design is inspired by this [illustrative image](https://www.drugwatch.com/wp-content/uploads/Immunization-Infants-to-Preschool-Aged.png).
 
-## Available Scripts
+# Requirements for the test
 
-In the project directory, you can run:
+We need a React component that can display a vaccination calendar, with dynamic information (type of vaccines, recommended vaccination ranges, vaccines already applied). Something similar to this https://www.drugwatch.com/wp-content/uploads/Immunization-Infants-to-Preschool-Aged.png (illustrative image).
 
-### `yarn start`
+# Criteria:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The data model in general is defined by you, taking into account that the existing entities are Vaccine (type of vaccine) and Vaccination (vaccination event).
+The patient's date of birth will also be received.
+The structure of the calendar/table is given by configuration, that is, they come as a decoupled parameter from the rest of the data: As seen in the image, the axes are a) the Age Ranges (arbitrary) for the columns, and b) Vaccine Types (Vaccine) for the rows. For each row comes id, name, recommendedAdministrations (Vaccine) The recommendedAdministrations are time ranges that suggest when the doses of each vaccine should be applied, you define what would be the convenient data structure considering that we have to use that data to locate the Vaccinations in the matrix.
+On the other hand, N Vaccinations that were applied to the patient will be received as a list (Vaccine id and date).
+It is important to consider that the data comes "raw", so any computation necessary to locate the data in its place must be done on the Frontend (the component must include that logic).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Required Stack:
 
-### `yarn test`
+Typescript
+React
+Semantic UI (https://react.semantic-ui.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Instructions for the component
+1. The component will receive the patient's date of birth
+2. The component will receive a list of N Vaccinations with the Vaccine id and date
+3. The component will receive a configuration object with the age ranges and vaccine types
+4. The component will display a vaccination calendar with the information of the vaccines applied and the recommended administrations
+5. The component will include the logic to locate the Vaccinations in the matrix
 
-### `yarn build`
+# Configuration
+The calendar's columns (age ranges) and the rows (types of vaccines) can be configured by passing props to the component. Adjust these according to your specific needs.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Instructions for using the system
+1. Clone the repository
+2. Run `npm install` to install the dependencies
+3. Run `npm start` to start the application
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
